@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PDA status</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3>报工类型</h3>
+        <!--Move In(物料到本工站)--Check In（制程开始）--报工--Check Out（制程结束）--Move Out（物料离开本工站）-->
+                <ol>
+                <li>Move In(物料到本工站)
+                <ul>
+                <li>首道工序不用Move In</li>
+
+            </ul>
+                </li>
+                <li>Check In（制程开始）</li>
+                <li>报工</li>
+                <li>Check Out（制程结束）</li>
+                <li>Move Out（物料离开本工站）</li>
+            </ol>
+        <h3>PDA应该要达到T100协议的???</h3>
+        <ol>
+                <li>首道工序不用Move In</li>
+                <li>PDA需要做Check In，但不产生T100单据</li>
+                <li>作业人数不应为0</li>
+                <li>同一工作站的工序间不用Move Out再Move In</li>
+                <li>跨工作站的工序间流转需要Move Out再Move In</li>
+                <li>委外工序需要做Move In和Move Out</li>
+                <li>Check Out之后自动产生报工单</li>
+                <li>首道工序Check In和Check Out时需扫描工单号和模具，Check Out之后自动产生物料批号，记录在T100首道工序的报工单上</li>
+                <li>首道之后的工序，不需扫描工单号和模具，需扫描压铸Check Out之后产生的物料批次。</li>
+                <li>最后一道Move Out后，自动产生完工入库单。</li>
+            </ol>
+<!--0.Move In(物料到本工站)--Check In（制程开始）--报工--Check Out（制程结束）--Move Out（物料离开本工站）
+1.首道工序不用Move In
+2.PDA需要做Check In，但不产生T100单据
+3.作业人数不应为0
+2.同一工作站的工序间不用Move Out再Move In
+3.跨工作站的工序间流转需要Move Out再Move In
+4.委外工序需要做Move In和Move Out
+5.Check Out之后自动产生报工单
+6.首道工序Check In和Check Out时需扫描工单号和模具，Check Out之后自动产生物料批号，记录在T100首道工序的报工单上
+7.首道之后的工序，不需扫描工单号和模具，需扫描压铸Check Out之后产生的物料批次。
+8.最后一道Move Out后，自动产生完工入库单。-->
+        
+    </body>
+</html>
